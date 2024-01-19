@@ -1,6 +1,8 @@
+import { connectToDatabase } from '@/lib/mongoose';
 import React from 'react';
 
-const page = () => {
+const page = async () => {
+  await connectToDatabase();
   return <div>page</div>;
 };
 
